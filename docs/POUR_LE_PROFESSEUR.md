@@ -46,7 +46,7 @@ Lancer les deux serveurs. Lire les deux tâches. Ajouter une tâche depuis React
 
 ## Portée des preuves
 
-Les captures correspondent à des moments successifs de la séance. Les essais API dans /docs sont visibles. La première capture React précède les boutons finaux. Les déclarations de réussite de l’utilisateur sont distinguées des captures et des tests automatiques. La validation automatisée de l’API ne prouve pas à elle seule les interactions dans le navigateur.
+Les captures correspondent à des moments successifs de la séance. Les essais API dans /docs sont visibles. La première capture React précède les boutons finaux. Quatre captures ajoutées ensuite documentent la création suivie d’un rechargement, le changement de statut, le filtre et la suppression suivie d’un rechargement dans React. Ces essais de navigateur complètent les tests HTTP automatisés.
 
 ## Limites assumées
 

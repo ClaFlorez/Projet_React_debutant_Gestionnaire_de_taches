@@ -74,6 +74,22 @@
       "sha256": "6caf7262e546f8a546a5c901e87aef5a653b71780ee0232621e9323e9bf74bf8"
     },
     {
+      "path": "docs/captures/13-react-post-apres-rechargement.png",
+      "sha256": "9f61c6ed5bd29ffbd4c909adfbd58ba74cbe9156a5ad80b549a910d1cc4d2abd"
+    },
+    {
+      "path": "docs/captures/14-react-patch-terminee.png",
+      "sha256": "af813852bdc97bab6a452e4d7b6919e54d7ec49a67c67a854ba79b1ae11e0b4f"
+    },
+    {
+      "path": "docs/captures/15-react-filtre-restantes.png",
+      "sha256": "1459b55bea45e6af9f80940a08ec602f3bdf44422ecbe49c859074c66eacd3db"
+    },
+    {
+      "path": "docs/captures/16-react-delete-apres-rechargement.png",
+      "sha256": "eebc072350024192b6fa4d4413a3ae831de72e1c01a479be9077a2dd8f5b7564"
+    },
+    {
       "path": "docs/captures/originaux/codex-clipboard-30efd50a-7b5a-4822-9016-d76f126b06ba.png",
       "sha256": "6d46ceb97f866b5a098ad1a69c9df13cb6f0eed57ace59c8fa186925aff9d48b"
     },
@@ -155,11 +171,11 @@
     },
     {
       "path": "docs/POUR_LE_PROFESSEUR.md",
-      "sha256": "0c30be2f2662fc2388bb68de194f4f24f8413c411f833f1a6dd53ef4a28a892d"
+      "sha256": "bb471d06f5fdcbdd53fafb76f68c872e333ae03fb3243184c3b9640e358b2629"
     },
     {
       "path": "docs/PROVENANCE.md",
-      "sha256": "9bd17a53ce55936c3bfeab4bc6144c53b44c712fe823a0a645ef887dbc684a4b"
+      "sha256": "da5221b40562e0b4636746844f833fedf78efbf9304c0ee31c47d9adfc3a5944"
     },
     {
       "path": "docs/QUESTIONS_REPONSES.md",
@@ -167,19 +183,19 @@
     },
     {
       "path": "docs/TESTS_ET_PREUVES.md",
-      "sha256": "9b5d351193dcb43b8236852abb9909b993ab391fc1a9514e8e9a1ea6f4d34de9"
+      "sha256": "9a9d0eb1d7184207adfb146dc12b40dd97262e366ad07b9f63c554182e84a7c6"
     },
     {
       "path": "docs/TP_React_corrige.pdf",
-      "sha256": "af47b1613769b4df0fc7a7a7be2fba0e9272bfd685faaf1de7514ab4ad633f0e"
+      "sha256": "98bb2039bca1b3875413331edf20a8bca711e17ad841f4b80ff35bc88b098580"
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "cdd51fdc09917ef363d82e064fec5b0874dce8a6d333b6f9548f969e26f472eb"
+      "sha256": "933bab330953a336794b5747d6becd198f9e1895060dc671db9fea0d2da8f6e6"
     },
     {
       "path": "docs/verification/page-01.png",
-      "sha256": "225cfdb2af8bcc7e22962a26a1d01a29478f5919b239d59805b7c92b3dd30667"
+      "sha256": "0f5212d5079e7194d79a522d2566cede702adad2553cde8a51b144cefbdee04b"
     },
     {
       "path": "docs/verification/page-02.png",
@@ -215,7 +231,7 @@
     },
     {
       "path": "docs/verification/page-10.png",
-      "sha256": "ab5afbd7f15fd92f17c13160e816613b75d3ac151cdc299218bfaa6b0d4f09fa"
+      "sha256": "98f8b5a8374b2c51450cee514acdf4a088147a8b546c503475f23153ca8ad2dd"
     },
     {
       "path": "docs/verification/page-11.png",
@@ -227,43 +243,47 @@
     },
     {
       "path": "docs/verification/page-13.png",
-      "sha256": "c85844859e0e4bd280fdd4cb7f00f99bda852911b4bf580a315f3d8423868a92"
+      "sha256": "9985cf00e9a8216212a2a31e958ed82503644dbf2ca383367e4b5467059244e3"
     },
     {
       "path": "docs/verification/page-14.png",
-      "sha256": "b4e249c3e4e4cef78992a61b5578a427c6af0804d33b62dfa34834124a5a44a9"
+      "sha256": "c51dda6b3d75ac4521e2d4f05331d6c0d8430abb36a37f2a3eaaa21bed5b3090"
     },
     {
       "path": "docs/verification/page-15.png",
-      "sha256": "882b8db1526b0c4d60dfb0d09dfde22b69bc88cabb77fcdb7ff700aa6ff32fa3"
+      "sha256": "95b819c2d24c0d489306c742d23adeffc21515fd5d006593fdc817e495b14f2b"
     },
     {
       "path": "docs/verification/page-16.png",
-      "sha256": "6d8fb48a64b137403383d20f3f188942442dd223fd6725cc7855e68f266b437c"
+      "sha256": "e2d59a7d150117e7fc9489c18612faa60ad3fbb2e8a49948278f416c423e7516"
     },
     {
       "path": "docs/verification/page-17.png",
-      "sha256": "89065d1f7ae9603e92847de603add11895b634730d6349025b1749fc00053441"
+      "sha256": "89cbed6d9be0ada5de14a4cc8405d4843b1ef044ff464c2d6aba7f2380beca2c"
     },
     {
       "path": "docs/verification/page-18.png",
-      "sha256": "559e8a767aa620c93fd7e95cf84bae9848070a3bde6362fe2a575690a51580f3"
+      "sha256": "fa6fab1959f566280a0736352011cee39f4f1cdcfb43fba44b53cdceb21aa9df"
     },
     {
       "path": "docs/verification/page-19.png",
-      "sha256": "9cad0c557adea4af77fe0b6709f6f66676a7c828cd8026c509ef61325434cbd6"
+      "sha256": "be5c79a4b82bda5895aaf6bd7b034c389c497ee25e7fafcf1ac62f6ce23aae06"
     },
     {
       "path": "docs/verification/page-20.png",
-      "sha256": "99dbff4d8891a6fed1b7accd68a1ee82ab970da6cc36b24e7b70cbaeeb1ae4d2"
+      "sha256": "8da8a736a7a60f4dd6894c67a5e24630fd27347de935026b8667c68fa3af97a1"
     },
     {
       "path": "docs/verification/page-21.png",
-      "sha256": "0af8ca1ff2b15452b75b11cf3ba1cb9c05c2a9bcfab7d75d5ef28267c4acee94"
+      "sha256": "02968446dfd49bca1f85afdd8da5c66b2f3684465cc224589f365cca4bfb9b4b"
+    },
+    {
+      "path": "docs/verification/page-22.png",
+      "sha256": "f5ef2e3de68c82318f5ca12bab66cc571460ded223d9d6b8409e1c2fc02b9cf6"
     },
     {
       "path": "docs/verification/pdf-planche.jpg",
-      "sha256": "4e5b8f5b0864c59b10f9f492d865c4585f906e0b353113df836a8914ec1ea841"
+      "sha256": "11c7aeb599c83ff6eecce71e4b9ee15f4753987c0d55904e90e9e14ddc984be0"
     },
     {
       "path": "docs/verification/video-1.png",
@@ -318,6 +338,10 @@
       "sha256": "aec636fcd96b536a812e24af033101b4e1db90f9cc77a0613019b264eec3ce99"
     },
     {
+      "path": "media/Le_voyage_des_requetes.gif",
+      "sha256": "ae2fce3ba69d7990f26671222c2028ce13f4e9b5340963664d33a9f88ced1655"
+    },
+    {
       "path": "media/Le_voyage_des_requetes.mp4",
       "sha256": "b7bcf7d6ba45e640030be0c5f9183062f3248fa1d2468332a58f0f0b708e99a2"
     },
@@ -343,7 +367,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "c14fc928a77083293364b369f85168d339e964fadc6d1a49038e920b2354b72b"
+      "sha256": "67d371d442a78ec7e19ec8ec4dd7d6b41e022dfc070db5b30232c679264afdc5"
     },
     {
       "path": "requirements-media.txt",
@@ -355,7 +379,7 @@
     },
     {
       "path": "scripts/generer_supports.py",
-      "sha256": "2b527016bde4b74123c9e4ed248eebb2d64de8c7576b18501a8f5229c3b916f8"
+      "sha256": "87a18f2e77e8f536da599baec8de596fbdbd4bec1df9a0ddd1fc75b11ba3ecc3"
     },
     {
       "path": "scripts/test_api.py",

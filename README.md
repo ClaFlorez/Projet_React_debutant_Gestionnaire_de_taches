@@ -23,6 +23,10 @@ Un camion transporte une requête de la ville React vers la ville FastAPI. Il re
 
 [Ouvrir ou télécharger le MP4](media/Le_voyage_des_requetes.mp4) · [Lire le script de la vidéo](media/SCENARIO.md)
 
+Le voyage complet est aussi visible directement ci-dessous sous forme d’animation GIF. Il se répète automatiquement ; cliquer sur le lien MP4 permet d’ouvrir ou de télécharger la vidéo avec sa barre de lecture.
+
+![Animation complète du voyage des requêtes](media/Le_voyage_des_requetes.gif)
+
 ## Ce qui se passe réellement
 
 ```mermaid
@@ -112,6 +116,12 @@ Une tâche barrée a `done: true`. Cette capture précède l’ajout des boutons
 ![Routes CRUD](docs/captures/06-routes-crud.png)
 
 Les preuves détaillées de GET, POST, PATCH et DELETE sont regroupées dans [Tests et preuves](docs/TESTS_ET_PREUVES.md).
+
+### Interface finale après création et rechargement
+
+![Création React confirmée après rechargement](docs/captures/13-react-post-apres-rechargement.png)
+
+La tâche Test de validation du TP a été ajoutée dans React, retrouvée après un rechargement, terminée, filtrée puis supprimée. Les quatre captures de ce cycle sont commentées dans la page des preuves.
 
 ## Organisation des fichiers
 

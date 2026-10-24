@@ -168,7 +168,7 @@ def pdf():
         if y<45:raise ValueError(f'Code overflow {n}')
     def shot(name,caption,maxh=240,region=None):
         nonlocal y
-        file=TMP/f'codex-clipboard-{name}.png'
+        file=(PROJECT/'docs'/'captures'/name) if name.endswith('.png') else TMP/f'codex-clipboard-{name}.png'
         im=Image.open(file);iw,ih=im.size
         # Clip in the PDF to show only the relevant response, without altering source captures.
         l,t,r,b=region or (0,0,iw,ih)
@@ -186,7 +186,7 @@ def pdf():
     code('React → fetch → HTTP → Uvicorn → FastAPI\nReact ← response.json() ← réponse HTTP / JSON ← FastAPI\nsetTasks(data) → nouvel affichage')
     h('Comment lire les preuves')
     para('Les captures sont celles fournies pendant les essais. Elles représentent des moments différents du projet : la première interface ne comporte donc pas encore les boutons de suppression. Une capture commune peut illustrer plusieurs notions, sans prouver à elle seule chaque interaction.')
-    para('Les quatre opérations de l’API ont été testées dans la documentation interactive. Le code final React a été relu. L’utilisateur a signalé que la suppression et le changement de statut fonctionnent. La création depuis React, suivie d’un rechargement, reste une vérification finale à effectuer ; elle n’est pas présentée comme déjà prouvée.')
+    para('Les quatre opérations de l’API ont été testées dans la documentation interactive. Le cycle final React a ensuite été vérifié dans le navigateur : création, rechargement, changement de statut, filtre et suppression. Quatre nouvelles captures documentent ces essais. Les contrôles de code, de compilation et d’API sont également passés sur GitHub.')
     h('Une différence avec la consigne')
     para('Le sujet initial utilise TypeScript et App.tsx. Le projet utilise JavaScript et App.jsx avec des commentaires JSDoc. Le bon état initial est donc <b>useState([])</b>, sans la syntaxe TypeScript &lt;Task[]&gt;.')
     h('Organisation du corrigé')
@@ -263,7 +263,7 @@ def pdf():
     code('const created = await request(API_URL, {\n  method: \'POST\',\n  headers: { \'Content-Type\': \'application/json\' },\n  body: JSON.stringify({ title }),\n})\nif (created) setTasks((currentTasks) => [...currentTasks, created])')
     para('JSON.stringify transforme l’objet JavaScript en texte JSON pour l’envoi. FastAPI valide le titre avec TaskCreate, construit un identifiant et retourne la tâche créée avec le statut <b>201</b>. React ajoute cet objet à sa liste après réussite.')
     shot('61c63c2f-248b-44b4-a0b9-6a3dd7539993','Capture POST fournie : Préparer le cours a été créé avec id 3 et done false. Le code 201 confirme la création.',315,region=(5,160,505,351))
-    para('<b>État de la validation :</b> POST a été testé directement dans /docs. Le branchement de addTask dans React est présent dans le code final. Il reste à créer une tâche depuis le formulaire React, puis recharger la page pour confirmer son retour depuis l’API.')
+    para('<b>Validation :</b> POST a été testé dans /docs puis depuis le formulaire React. La tâche de validation reste visible après un rechargement du navigateur, ce qui confirme son retour depuis l’API. Les captures du cycle React figurent après les essais DELETE.')
 
     page('9 Modifier une tâche avec PATCH','Route : /tasks/{task_id}')
     code('const updated = await request(`${API_URL}/${taskId}`, {\n  method: \'PATCH\',\n  headers: { \'Content-Type\': \'application/json\' },\n  body: JSON.stringify({ done: !task.done }),\n})\nif (updated) {\n  setTasks((currentTasks) =>\n    currentTasks.map((t) => t.id === taskId ? updated : t))\n}')
@@ -277,6 +277,13 @@ def pdf():
     shot('ef22c6b4-fa02-4022-a5fd-3e07ee61a7e8','Capture DELETE : le serveur répond 200 avec deleted égal à 3. La tâche de test a été supprimée.',250,region=(3,0,508,182))
     para('La fonction request vérifie response.ok et affiche actionError en cas d’échec. Elle retourne null en cas d’erreur ; les fonctions d’action n’appliquent alors aucun changement à tasks. L’utilisateur a signalé une suppression réussie depuis React.')
 
+    page('9 Vérifier les actions dans React')
+    para('Essais réalisés dans le navigateur le 24 octobre 2026. Une seule tâche temporaire a été créée puis supprimée ; la tâche existante Vérifier les alertes a été conservée.')
+    shot('13-react-post-apres-rechargement.png','POST depuis React : la tâche de validation reste présente après rechargement.',90,region=(70,0,1210,250))
+    shot('14-react-patch-terminee.png','PATCH depuis React : la tâche est barrée et le compteur diminue.',90,region=(70,0,1210,250))
+    shot('15-react-filtre-restantes.png','Filtre coché : la tâche terminée est masquée, sans être supprimée.',90,region=(70,0,1210,250))
+    shot('16-react-delete-apres-rechargement.png','DELETE puis rechargement : la tâche de validation est absente.',90,region=(70,0,1210,250))
+
     page('Serveur mémoire et limites du projet')
     h('Où se trouve le serveur')
     para('Uvicorn est installé dans le dossier .venv du projet parent. Son exécutable existe sur le disque ; le serveur en activité est un processus qui utilise la RAM du PC. Il n’a pas de bureau graphique. /docs est une interface de test de l’API fournie par FastAPI.')
@@ -287,7 +294,7 @@ def pdf():
     h('Limites de cette version pédagogique')
     para('L’API n’a pas d’authentification. Elle ne rejette pas encore les titres composés uniquement d’espaces côté serveur. TaskUpdate accepte aussi null, même si l’interface normale envoie un booléen pour done. Les requêtes simultanées et les clics répétés ne sont pas gérés comme dans une application complète. Ces points ne bloquent pas les essais demandés, mais doivent être améliorés pour un usage plus large.')
     h('Bilan des vérifications')
-    para('GET : capture 200 avec la liste. POST : capture 201 avec la tâche 3. PATCH : capture 200 avec done true. DELETE : capture 200 avec deleted 3. Chargement React : capture des deux tâches. Modification et suppression React : signalées par l’utilisateur. Création React puis rechargement : à confirmer.')
+    para('GET : capture 200 avec la liste. POST : capture 201 avec la tâche 3. PATCH : capture 200 avec done true. DELETE : capture 200 avec deleted 3. React : création suivie d’un rechargement, changement de statut, filtre et suppression suivie d’un rechargement vérifiés et capturés. Les tests isolés HTTP et les contrôles GitHub ont également réussi.')
     h('Explication orale proposée')
     para('« React est le client. Quand j’effectue une action, il envoie une requête HTTP à l’API. Uvicorn reçoit cette requête et FastAPI exécute la route correspondante. Le serveur renvoie du JSON. Après une réponse réussie, React met son état à jour et actualise la page. Les données du serveur restent ici en mémoire et ne survivent pas à un redémarrage. »')
 

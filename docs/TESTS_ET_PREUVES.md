@@ -32,7 +32,31 @@ La réponse contient deleted 3. Cette tâche de test a été supprimée.
 
 ![React étape 8](captures/05-interface-react-etape-8.png)
 
-L’affichage après chargement est capturé. La modification et la suppression finales ont été signalées par l’utilisateur, sans nouvelle capture jointe à cette archive. Le test de création React puis rechargement reste à confirmer manuellement.
+Cette première image montre le chargement. Un cycle complet a ensuite été vérifié dans le navigateur et capturé ci-dessous.
+
+### Création et rechargement depuis React
+
+![POST depuis React puis rechargement](captures/13-react-post-apres-rechargement.png)
+
+La tâche Test de validation du TP a été créée avec le formulaire. Elle revient après le rechargement de la page grâce à GET : la création est donc confirmée côté serveur.
+
+### Changement de statut depuis React
+
+![PATCH depuis React](captures/14-react-patch-terminee.png)
+
+La tâche de validation est barrée et le nombre de tâches restantes passe de 2 à 1.
+
+### Filtre depuis React
+
+![Filtre des tâches restantes](captures/15-react-filtre-restantes.png)
+
+La tâche terminée disparaît de la vue lorsque le filtre est coché. En retirant le filtre, elle revient.
+
+### Suppression puis rechargement depuis React
+
+![DELETE depuis React puis rechargement](captures/16-react-delete-apres-rechargement.png)
+
+La tâche de validation est supprimée et reste absente après rechargement. La tâche initiale Vérifier les alertes est conservée.
 
 ## Test automatisé isolé
 

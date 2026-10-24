@@ -12,7 +12,7 @@ Le PDF de l’enseignant est conservé comme référence pédagogique dans docs/
 
 ## Captures
 
-Les captures proviennent des images envoyées par l’utilisateur dans cette séance. Leurs noms descriptifs indiquent leur contenu et les originaux gardent leur nom technique. Aucune capture d’un test inexistant n’a été inventée.
+Les captures 00 à 12 proviennent des images envoyées par l’utilisateur dans cette séance. Leurs noms descriptifs indiquent leur contenu et les originaux gardent leur nom technique. Les captures 13 à 16 ont ensuite été prises pendant les essais réels du navigateur par Codex. Aucune capture d’un test inexistant n’a été inventée.
 
 ## Corrigé et explications
 
