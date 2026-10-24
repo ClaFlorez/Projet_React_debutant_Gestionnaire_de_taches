@@ -1,11 +1,4 @@
     
-
-https://github.com/user-attachments/assets/4f45c766-d4f8-41e5-afa0-b92030747fdf
-
-
-
-https://github.com/user-attachments/assets/17183137-56ec-4314-b637-ee5b26ec2f42
-
 # Projet React débutant Gestionnaire de tâches
 
 Un TP progressif pour comprendre **comment une action dans React devient une requête HTTP, un traitement FastAPI et une nouvelle liste à l’écran**.
