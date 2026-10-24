@@ -61,8 +61,6 @@ git clone https://github.com/ClaFlorez/Projet_React_debutant_Gestionnaire_de_tac
 cd .\Projet_React_debutant_Gestionnaire_de_taches
 ```
 
-Le dépôt est privé : il faut un compte disposant de l’accès. Le professeur pourra le consulter une fois invité par le propriétaire.
-
 ### Terminal 1 pour FastAPI
 
 Depuis la racine du dépôt :
