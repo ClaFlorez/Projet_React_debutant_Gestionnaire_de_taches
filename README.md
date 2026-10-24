@@ -22,7 +22,7 @@ Un camion transporte une requête de la ville React vers la ville FastAPI. Il re
 
 [![Voir le voyage des requêtes](media/apercu-video.png)](media/Le_voyage_des_requetes.mp4)
 
-[Ouvrir ou télécharger le MP4](media/Le_voyage_des_requetes.mp4) · [Lire le script de la vidéo](media/SCENARIO.md)
+[Lire le script de la vidéo](media/SCENARIO.md)
 
 Le voyage complet est aussi visible directement ci-dessous sous forme d’animation GIF. Il se répète automatiquement ; cliquer sur le lien MP4 permet d’ouvrir ou de télécharger la vidéo avec sa barre de lecture.
 
