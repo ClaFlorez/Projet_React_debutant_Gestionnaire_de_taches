@@ -1,3 +1,11 @@
+    
+
+https://github.com/user-attachments/assets/4f45c766-d4f8-41e5-afa0-b92030747fdf
+
+
+
+https://github.com/user-attachments/assets/17183137-56ec-4314-b637-ee5b26ec2f42
+
 # Projet React débutant Gestionnaire de tâches
 
 Un TP progressif pour comprendre **comment une action dans React devient une requête HTTP, un traitement FastAPI et une nouvelle liste à l’écran**.
@@ -177,3 +185,15 @@ Le document PDF est un instantané pédagogique. Les précisions et validations 
 Les tâches ne sont pas sauvegardées sur disque. Redémarrer Uvicorn réinitialise la liste du serveur ; recharger le navigateur conserve les changements encore présents dans cette liste. L’API n’a pas d’authentification. La validation des titres côté serveur et les actions concurrentes peuvent être améliorées. Le formulaire vide actuellement le champ dès l’envoi, même en cas d’échec ultérieur. Voir [les limites expliquées](docs/QUESTIONS_REPONSES.md#quelles-sont-les-limites-de-cette-version).
 
 Ce dépôt conserve le TP et ses ressources de classe. Il n’accorde pas de licence sur l’énoncé fourni par l’enseignant. Aucun logo CLAUD·IA n’est ajouté aux supports.
+
+
+https://github.com/user-attachments/assets/bea1384d-a972-4b6b-b766-f42adc67a243
+
+
+
+https://github.com/user-attachments/assets/375a6a76-285d-4417-aa9c-1a067c3326d0
+
+
+
+https://github.com/user-attachments/assets/09010a2c-c289-4a35-b7c9-15dc25a92ec9
+
