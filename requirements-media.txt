@@ -1,0 +1,6 @@
+-r requirements.txt
+reportlab
+pypdf
+pypdfium2
+pillow
+imageio-ffmpeg
