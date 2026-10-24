@@ -16,7 +16,7 @@ Le projet permet de lire, créer, terminer, filtrer et supprimer des tâches. Il
 
 ## Vidéo Le voyage des requêtes
 
-Un camion transporte une requête de la ville React vers la ville FastAPI. Il revient avec la réponse JSON. **64 secondes, textes en français, sans audio et sans logo.**
+Un camion transporte une requête de la ville React vers la ville FastAPI. Il revient avec la réponse JSON. **64 secondes, textes en français, sans audio**
 
 <!-- VIDEO_GITHUB_ATTACHMENT -->
 
